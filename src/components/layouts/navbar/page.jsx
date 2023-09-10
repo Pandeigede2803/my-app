@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
   return (
-    <nav className="bg-gray-600 font-plus-jakarta-sans">
+    <nav className=" font-plus-jakarta-sans">
       <div className="mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -56,16 +56,16 @@ const Navbar = () => {
             <div className="hidden sm:ml-6 sm:block">
               <div className="flex lg:space-x-40 md:space-x-4 font-plus-jakarta-sans">
                 {/* Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" */}
-                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-gray-700 hover:text-white px-3 py-2 text-xl font-medium">
+                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-[#A28BFF] hover:text-white px-3 py-2 text-xl font-medium">
                   HOME
                 </Link>
-                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-gray-700 hover:text-white px-3 py-2 text-xl font-medium">
+                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-[#A28BFF] hover:text-white px-3 py-2 text-xl font-medium">
                   ABOUT
                 </Link>
-                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-gray-700 hover:text-white px-3 py-2 text-xl font-medium">
+                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-[#A28BFF] hover:text-white px-3 py-2 text-xl font-medium">
                   PROJECTS
                 </Link>
-                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-gray-700 hover:text-white px-3 py-2 text-xl font-medium">
+                <Link href="#" className="text-gray-300 hover:border-solid hover:rounded-lg hover:bg-[#A28BFF] hover:text-white px-3 py-2 text-xl font-medium">
                   HIRE ME
                 </Link>
               </div>

@@ -6,21 +6,21 @@ const Hero_section = () => {
   return (
     <div className="  flex flex-row justify-between mt-30 mx-56">
       <div classname="  mt-24 align-middle">
-        <div className="flex flex-col justify-center ml-10 mt-40">
-          <h3 className="font-plus-jakarta-sans text-xl">Dede Sudiahna</h3>
+        <div className=" space-y-5 flex flex-col justify-center ml-10 mt-40">
+          <h3 className="font-plus-jakarta-sans text-xl">Dede Sudiahna,</h3>
           <h1 className="font-plus-jakarta-sans  font-bold text-7xl">
-            WEB DEVELOPER
+            FULL STACK DEVELOPER
           </h1>
-          <h1 className="font-plus-jakarta-sans text-4xl">PORTFOLIO</h1>
+          <h1 className="font-plus-jakarta-sans text-4xl">PORTOFOLIO</h1>
         </div>
         <div className="">
-          <button className="ml-10 mr-2 border border-2 hover:bg-slate-700 w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
+          <button className="ml-10 mr-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
             DIGITAL MARKETING
           </button>
-          <button className="mx-2 border border-2 hover:bg-slate-700 w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
+          <button className="mx-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
             WEBSITE
           </button>
-          <button className="mx-2 border border-2 hover:bg-slate-700 w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
+          <button className="mx-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
             VIDEO/PHOTO
           </button>
         </div>
@@ -40,8 +40,15 @@ const Hero_section = () => {
           {/* create the social media icon here */}
         </div>
       </div>
-      <div>
-        <img src="/photo_2023-02-21_23-06-24 2.png" className="  w-3/4 " />
+      <div className="flex flex-col justify-center">
+         
+      <img src="/Ellip.png" className="ml-10 h-auto mt-22  w-3/4 " />
+        <img
+          src="/fotodede.png"
+          className="absolute w-1/4 top-10 bottom-10 left-50 mt-2 ml-2"
+        />
+        
+       
       </div>
     </div>
   );
