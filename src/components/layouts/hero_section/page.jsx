@@ -11,19 +11,9 @@ const Hero_section = () => {
           <h1 className="font-plus-jakarta-sans  font-bold text-7xl">
             FULL STACK DEVELOPER
           </h1>
-          <h1 className="font-plus-jakarta-sans text-4xl">PORTOFOLIO</h1>
+          
         </div>
-        <div className="">
-          <button className="ml-10 mr-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
-            DIGITAL MARKETING
-          </button>
-          <button className="mx-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
-            WEBSITE
-          </button>
-          <button className="mx-2 border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans">
-            VIDEO/PHOTO
-          </button>
-        </div>
+       
 
         <div>
           <div className=" ml-10 flex flex-row mt-6">

@@ -13,10 +13,11 @@ const [selectedOption, setSelectedOption] = useState('Framework');
         <Link href="#" onClick={() => setSelectedOption('Digital')} className='hover:text-[#A28BFF]'>DIGITAL MARKETING</Link>
       </span>
       {selectedOption === 'Design' && (
-        <div className="  flex flex-row m-4 justify-center space-x-9">
+        <div className="flex flex-row mx-auto my-3 justify-center space-x-9">
           <img src="/Figma logo.png" className=' my-auto w-auto h-12'/> 
           <img src="/adobe-illustrator-logo-free-png.webp" className='my-auto w-24 h-auto'/>
           <img src="/Canva logo.png" className=' my-auto w-auto h-20'/>
+          <img src="coreldraw-x7-logo-747B0DC253-seeklogo.com.png" className=' my-auto w-auto h-20'/>
           {/* Render your Figma content here */}
         </div>
       )}

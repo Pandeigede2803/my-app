@@ -4,6 +4,7 @@ import Navbar from '@/components/layouts/navbar/page'
 import Hero_section from '@/components/layouts/hero_section/page'
 import Expertise from '@/components/layouts/expertise/page'
 import About from '@/components/layouts/about/page'
+import Portofolio from '@/components/layouts/portofolio/page'
 
 
 
@@ -14,8 +15,11 @@ export default function Home() {
     <div className='flex flex-col w-fit lg:w-full'>
       <Navbar/>
       <Hero_section/>
+
       <Expertise/>
       <About/>
+      <Portofolio/>
+      
       
       </div>
   )
