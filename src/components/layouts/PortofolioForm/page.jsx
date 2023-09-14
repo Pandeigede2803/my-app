@@ -7,7 +7,7 @@ const PortfolioForm = () => {
   const [categories, setCategories] = useState('Design'); // Initialize with the default value
   const [imagePreview, setImagePreview] = useState(null); // To store the image preview URL
 
-  const categoryOptions = ['Design', 'Website', 'Video/Photo'];
+  const categoryOptions = ['Design', 'Website', 'Video/Photo','Digital Marketing'];
 
   // Function to handle image selection and preview
   const handleImageChange = (e) => {

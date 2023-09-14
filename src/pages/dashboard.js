@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Link from "next/link";
-
-import PortofolioForm from '@/components/layouts/PortofolioForm/page';
-import PortofolioTable from '@/components/layouts/PortofolioTable/page';
-import Setting from '@/components/layouts/setting/page';
-
+import { FaHome, FaEdit, FaUser, FaCog } from "react-icons/fa";
+import PortofolioForm from "@/components/layouts/PortofolioForm/page";
+import PortofolioTable from "@/components/layouts/PortofolioTable/page";
+import Setting from "@/components/layouts/setting/page";
 
 const Dashboard = () => {
   // Use state to manage which component to render
@@ -13,9 +12,9 @@ const Dashboard = () => {
   const [displayEditProfile, setDisplayEditProfile] = useState(false); // State for rendering EditProfile
 
   return (
-    <div className="flex h-screen">
+    <div className="flex h-full  ">
       {/* Sidebar */}
-      <div className="w-64 bg-[#A28BFF] shadow-lg">
+      <div className="w-64 bg-[#A28BFF] shadow-lg min-h-max">
         <div className="p-4 ">
           <h1 className="text-2xl font-semibold text-gray-800">Dashboard</h1>
         </div>
@@ -26,11 +25,11 @@ const Dashboard = () => {
               className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
               onClick={() => {
                 setDisplayForm(false);
-                setDisplaySetting(false); // Hide Setting component
-                setDisplayEditProfile(false); // Hide EditProfile component
+                setDisplaySetting(false);
+                setDisplayEditProfile(false);
               }}
             >
-              Dashboard
+              <FaHome className="inline-block mr-2" /> Dashboard
             </Link>
           </li>
           <li className="mb-2">
@@ -39,16 +38,19 @@ const Dashboard = () => {
               className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
               onClick={() => {
                 setDisplayForm(true);
-                setDisplaySetting(false); // Hide Setting component
-                setDisplayEditProfile(false); // Hide EditProfile component
+                setDisplaySetting(false);
+                setDisplayEditProfile(false);
               }}
             >
-              Post
+              <FaEdit className="inline-block mr-2" /> Post
             </Link>
           </li>
           <li className="mb-2">
-            <Link href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">
-              Edit Profile
+            <Link
+              href="#"
+              className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
+            >
+              <FaUser className="inline-block mr-2" /> Edit Profile
             </Link>
           </li>
           <li className="mb-2">
@@ -57,11 +59,11 @@ const Dashboard = () => {
               className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
               onClick={() => {
                 setDisplayForm(false);
-                setDisplaySetting(true); // Show Setting component
-                setDisplayEditProfile(false); // Hide EditProfile component
+                setDisplaySetting(true);
+                setDisplayEditProfile(false);
               }}
             >
-              Settings
+              <FaCog className="inline-block mr-2" /> Settings
             </Link>
           </li>
         </ul>
@@ -69,7 +71,15 @@ const Dashboard = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-4 mt-10">
-        {displayForm ? <PortofolioForm /> : displaySetting ? <Setting /> : displayEditProfile ? <EditProfile /> : <PortofolioTable />}
+        {displayForm ? (
+          <PortofolioForm />
+        ) : displaySetting ? (
+          <Setting />
+        ) : displayEditProfile ? (
+          <EditProfile />
+        ) : (
+          <PortofolioTable />
+        )}
       </div>
     </div>
   );

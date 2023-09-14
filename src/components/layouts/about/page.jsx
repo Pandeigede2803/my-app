@@ -2,21 +2,18 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className=" mt-24 mx-60">
-      <h1 className="font-plus-jakarta-sans font-thin">About</h1>
-      <p className="font-plus-jakarta-sans font-bold text-justify">
-        AS AN INNOVATIVE WEB ARTISAN, I AM PASSIONATE ABOUT THE FUSION OF
-        CREATIVE THINKING AND WEB PROGRAMMING. WITH A DEEP LOVE FOR CRAFTING
-        DIGITAL EXPERIENCES, I EMBARK ON EVERY PROJECT AS A JOURNEY OF
-        INNOVATION AND EXPLORATION. I BELIEVE IN THE POWER OF IMAGINATION TO
-        TRANSFORM IDEAS INTO CAPTIVATING WEBSITES AND APPLICATIONS. MY JOURNEY
-        IN THE WORLD OF WEB DEVELOPMENT HAS BEEN MARKED BY A COMMITMENT TO
-        CONTINUOUS LEARNING AND A RELENTLESS PURSUIT OF EXCELLENCE. I THRIVE ON
-        THE CHALLENGE OF TURNING CONCEPTS INTO REALITY, PUSHING THE BOUNDARIES
-        OF WHAT'S POSSIBLE, AND CREATING WEB SOLUTIONS THAT LEAVE A LASTING
-        IMPRESSION. WELCOME TO MY DIGITAL CANVAS, WHERE I BLEND THE ARTISTRY OF
-        CREATIVITY WITH THE PRECISION OF WEB PROGRAMMING TO BRING VISIONS TO
-        LIFE.
+    <div className=" my-10 mx-28 lg:mx-20">
+      <h1 className="font-plus-jakarta-sans  text-center text-4xl ">ABOUT</h1>
+      <p className=" my-2 font-plus-jakarta-sans font-bold text-center ">
+        "As a creative web artisan, I'm passionate about merging imaginative
+        thinking with web programming, treating each project as an adventure in
+        innovation. I believe in the magic of imagination to transform ideas
+        into captivating websites and applications. My journey in web
+        development is characterized by continuous learning and a commitment to
+        excellence. I thrive on the challenge of turning concepts into reality,
+        pushing boundaries, and creating web solutions that leave a lasting
+        impression. Welcome to my digital canvas, where I blend creativity with
+        web programming to bring visions to life."
       </p>
     </div>
   );
