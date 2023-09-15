@@ -20,6 +20,10 @@ const projectSchema = new schema({
     type: String,
     required: true,
   },
+  URL: {
+    type: String,
+    required: true,
+  },
 });
 
 // Buat model Project berdasarkan skema yang telah didefinisikan

@@ -14,7 +14,7 @@ export default function Portofolio() {
       .catch((error) => console.error('Error fetching data:', error));
   }, [selectedCategory]);
 
-  // Function to filter projects based on selected category
+  // Function to filter projects based on the selected category
   const filteredProjects = selectedCategory === 'ALL'
     ? projects
     : projects.filter((project) => project.Categories.includes(selectedCategory));
@@ -24,7 +24,7 @@ export default function Portofolio() {
       <div className="flex flex-col justify-center mx-auto my-20 mt-10">
         <h1 className="text-center font-plus-jakarta-sans text-4xl">PORTFOLIO</h1>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:space-x-4">
-          <button
+        <button
             className={`border border-2 hover:bg-[#A28BFF] w-44 rounded-md h-10 mt-6 px-2 font-plus-jakarta-sans ${selectedCategory === 'ALL' ? 'bg-[#A28BFF]' : ''}`}
             onClick={() => setSelectedCategory('ALL')}
           >
@@ -67,6 +67,7 @@ export default function Portofolio() {
             ProjectTitle={project.ProjectTitle}
             Description={project.Description}
             Categories={project.Categories}
+            URL={project.URL} // Pass the URL as a prop
           />
         ))}
       </div>

@@ -9,7 +9,6 @@ export default function hireme() {
     <div className='flex flex-col w-fit lg:w-full'>
         <Navbar/>
         <HireMePage/>
-
       <Footer/>
     </div>
   )

@@ -4,7 +4,7 @@ const Project = require('../models/Project'); // Sesuaikan dengan path ke model 
 
 // Fungsi untuk membuat proyek baru
 exports.createProject = (req, res) => {
-  const { ProjectTitle, Description, Categories } = req.body;
+  const { ProjectTitle, Description, Categories, URL } = req.body;
   let Image = ''; // Initialize the Image variable
 
   // Check if a file is uploaded and set Image if it exists
@@ -17,7 +17,8 @@ exports.createProject = (req, res) => {
     ProjectTitle,
     Description,
     Categories,
-    Image, // Add the Image property to the newProject
+    Image,
+    URL, // Add the Image property to the newProject
   });
   console.log(`On Progrres Uploading project: ${ProjectTitle}`);
 
