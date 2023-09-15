@@ -130,7 +130,7 @@ function PortfolioTable() {
       </table>
     </div>
   </div>
-  );
+  );;
 }
 
 export default PortfolioTable;
