@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const PortfolioForm = () => {
   const [projectTitle, setProjectTitle] = useState("");
@@ -116,14 +117,17 @@ const PortfolioForm = () => {
         </div>
 
         {imagePreview && (
-          <div className="mb-4">
-            <img
-              src={imagePreview}
-              alt="Image Preview"
-              className="max-w-full h-auto"
-            />
-          </div>
-        )}
+  <div className="mb-4">
+    <Image
+      src={imagePreview}
+      alt="Image Preview"
+      layout="responsive"
+      width={400} 
+      height={400} 
+    />
+  </div>
+)}
+
 
         <div className="mb-4">
           <label

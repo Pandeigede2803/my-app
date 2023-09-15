@@ -1,20 +1,24 @@
 import React from "react";
+import Image from "next/image"; // Import the Image component
 
-function About_page() {
+function AboutPage() {
   return (
     <section className="py-16">
       <div className="container mx-auto flex flex-col md:flex-row items-center ">
         <div className="md:w-1/2">
-          <img
-            src="photo_2023-02-21_23-06-24 2.png" // Replace with your photo URL
+          {/* Replace the img tag with the Image component */}
+          <Image
+            src="/photo_2023-02-21_23-06-24 2.png" // Replace with the correct image path in your project
             alt="DedeSudiahna"
+            width={384} // Specify the width of the image (adjust as needed)
+            height={384} // Specify the height of the image (adjust as needed)
             className="mx-auto md:ml-auto w-48 h-48  lg:w-96 lg:h-auto rounded-full object-cover object-center bg-[#A28BFF]"
           />
         </div>
         <div className="md:w-1/2 text-center md:text-left mb-10 md:mb-0">
           <h2 className="text-3xl font-semibold">About Me</h2>
           <p className=" text-white mt-4 lg:text-xl">
-            I'm a digital marketing and web development professional with a
+          I&apos;m a digital marketing and web development professional with a
             passion for creating engaging online experiences. I also have a
             knack for videography, capturing moments and stories through video.
           </p>
@@ -47,4 +51,4 @@ function About_page() {
   );
 }
 
-export default About_page;
+export default AboutPage;

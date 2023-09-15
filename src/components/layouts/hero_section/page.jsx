@@ -1,5 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
+
+
+// ...
+
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Hero_section = () => {
@@ -30,7 +34,11 @@ const Hero_section = () => {
         </div>
       </div>
       <div className="lg:w-1/2 mt-10 lg:mt-0">
-        <img src="Group 33.png" className=" w-1/2 mx-auto lg:w-3/4 "/>
+        <Image
+          src="/Group 33.png"
+          alt="Image Alt Text"
+          className="w-1/2 mx-auto lg:w-3/4"
+        />
       </div>
     </div>
   );

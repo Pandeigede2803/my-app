@@ -4,6 +4,7 @@ import { FaHome, FaEdit, FaUser, FaCog } from "react-icons/fa";
 import PortofolioForm from "@/components/layouts/PortofolioForm/page";
 import PortofolioTable from "@/components/layouts/PortofolioTable/page";
 import Setting from "@/components/layouts/setting/page";
+import EditProfile from "@/components/layouts/EditProfile/page";
 
 const Dashboard = () => {
   // Use state to manage which component to render
@@ -76,7 +77,7 @@ const Dashboard = () => {
         ) : displaySetting ? (
           <Setting />
         ) : displayEditProfile ? (
-          <EditProfile />
+          <EditProfile/>
         ) : (
           <PortofolioTable />
         )}
